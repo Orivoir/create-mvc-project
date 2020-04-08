@@ -4,6 +4,8 @@ const projectName = process.argv.slice( 2 , 3 )[0] ;
 
 const colorLog = require('chalk') ;
 
+const _package = require('./../package.json') ;
+
 const isValidProjectName = name => (
     !!name &&
     typeof name === "string" &&
@@ -44,11 +46,19 @@ if( isValidProjectName( projectName ) ) {
         colorLog.green.bold(`project init in: ${ Date.now()-startTime}ms`)
     ) ;
 
+    console.log(
+        colorLog.cyan.bold(`\n> cd ${projectName}\n\n> npm start\n\nenjoy and unicorn power <3 !\n`)
+    ) ;
+
 } else {
 
     if( /^(\-\-?)v(ersion)?$/i.test(projectName) ) {
 
-        console.log("create-mvc-project version 1.0.0") ;
+        console.log(
+            colorLog.yellow.bold( "\ncreate-mvc-project" )
+            + " version: " +
+            colorLog.green.bold( _package.version + "\n" )
+        ) ;
 
     } else {
 

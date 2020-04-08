@@ -43,5 +43,10 @@
         "filename": "build-routes.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/build-routes.js"
+    } ,
+    {
+        "filename": "write-routes.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/write-routes.js"
     }
 ]

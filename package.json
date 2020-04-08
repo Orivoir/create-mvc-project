@@ -1,6 +1,6 @@
 {
   "name": "create-mvc-project",
-  "version": "1.0.0",
+  "version": "1.0.0-dev",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "scripts": {},
   "keywords": [],
-  "author": "",
+  "author": "Gaboriau Samuel <https://github.com/Orivoir>",
   "license": "ISC",
   "dependencies": {
     "build-directories": "^1.0.1",
