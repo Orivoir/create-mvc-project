@@ -1,0 +1,33 @@
+/**
+ * @Controller({
+ *      path: "/<CONTROLLER_NAME|lower>"
+ * })
+ */
+class <CONTROLLER_NAME> {
+
+    /**
+    * @Route( {
+    *      name: "index",
+    *      methods: ["GET"],
+    *      path: "/"
+    * } )
+    */
+    index( request, response ) {
+
+        response.status( 200 ) ;
+
+        response.type( 'json' ) ;
+
+        response.json( {
+            success: true,
+            status: 200,
+
+            path: './src/controller/<CONTROLLER_NAME>.js',
+
+            details: 'unicorn <3'
+        } ) ;
+    }
+
+} ;
+
+module.exports = <CONTROLLER_NAME> ;

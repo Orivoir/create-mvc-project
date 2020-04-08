@@ -1,0 +1,47 @@
+[
+    {
+        "filename": "package.json",
+        "path": "/",
+        "contentPath": "./content-files/_package.json"
+    } ,
+    {
+        "filename": "kernel.js",
+        "path": "/",
+        "contentPath": "./content-files/_index.js"
+    } ,
+    {
+        "filename": "Main.js",
+        "path": "/src/controller",
+        "contentPath": "./content-files/Main.js"
+    } ,
+    {
+        "filename": "index.ejs",
+        "path": "/views/main",
+        "contentPath": "./content-files/index.html.ejs"
+    } ,
+    {
+        "filename": "build-controller.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/build-controller.js"
+    } ,
+    {
+        "filename": "console.js",
+        "path": "/bin",
+        "contentPath": "./content-files/console.js"
+    } ,
+    {
+        "filename": "routes.json",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/routes.json"
+    } ,
+    {
+        "filename": "controller-model",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/controller-model.txt"
+    } ,
+    {
+        "filename": "build-routes.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/build-routes.js"
+    }
+]
