@@ -48,5 +48,13 @@
         "filename": "write-routes.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/write-routes.js"
+    } , {
+        "filename": ".env",
+        "path": "/",
+        "contentPath": "./content-files/.env"
+    } , {
+        "filename": "read-envfile.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/read-envfile.js"
     }
 ]
