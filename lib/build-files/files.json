@@ -17,7 +17,7 @@
     {
         "filename": "index.ejs",
         "path": "/views/main",
-        "contentPath": "./content-files/index.html.ejs"
+        "contentPath": "./content-files/index.ejs"
     } ,
     {
         "filename": "build-controller.js",
@@ -35,9 +35,9 @@
         "contentPath": "./content-files/routes.json"
     } ,
     {
-        "filename": "controller-model",
+        "filename": "controller-model-template",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model.txt"
+        "contentPath": "./content-files/controller-model-template.txt"
     } ,
     {
         "filename": "build-routes.js",
@@ -72,5 +72,21 @@
         "filename": "home-404.html",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/home-404.html"
+    }, {
+        "filename": "build-model-controller.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/build-model-controller.js"
+    }, {
+        "filename": "build-view-controller.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/build-view-controller.js"
+    }, {
+        "filename": "index-model",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/index-model.txt"
+    }, {
+        "filename": "controller-model-json",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/controller-model-json.txt"
     }
 ]
