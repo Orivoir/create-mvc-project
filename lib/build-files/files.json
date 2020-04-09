@@ -96,5 +96,9 @@
         "filename": "affect-config-express.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/affect-config-express.js"
+    }, {
+        "filename": "mysql-config.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/mysql-config.js"
     }
 ]
