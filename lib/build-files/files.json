@@ -56,5 +56,9 @@
         "filename": "read-envfile.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/read-envfile.js"
+    } , {
+        "filename": "resolve-dependencies-controller.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/resolve-dependencies-controller.js"
     }
 ]
