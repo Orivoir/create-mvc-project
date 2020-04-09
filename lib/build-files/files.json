@@ -88,5 +88,13 @@
         "filename": "controller-model-json",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/controller-model-json.txt"
+    }, {
+        "filename": "express.config.js",
+        "path": "/config",
+        "contentPath": "./content-files/express.config.js"
+    }, {
+        "filename": "affect-config-express.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/affect-config-express.js"
     }
 ]
