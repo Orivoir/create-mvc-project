@@ -60,6 +60,14 @@ if( isValidProjectName( projectName ) ) {
             colorLog.green.bold( _package.version + "\n" )
         ) ;
 
+    } else if( /^(\-\-?)(author|owner)$/i.test(projectName) ) {
+
+        console.log(
+            colorLog.cyan.bold(
+                `\n\tGABORIEAU Samuel\n\n\t<https://github.com/Orivoir>\n`
+            )
+        ) ;
+
     } else {
 
         console.log(
