@@ -124,5 +124,9 @@
         "filename": "Main.js",
         "path": "/src/controller",
         "contentPath": "./content-files/Main-no-ejs.js"
+    }, {
+        "filename": "normalize-package-name.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/normalize-package-name.js"
     }
 ]
