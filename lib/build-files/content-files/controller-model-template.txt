@@ -1,0 +1,28 @@
+/**
+ * @Controller({
+ *      path: "/<CONTROLLER_NAME|lower>"
+ * })
+ */
+class <CONTROLLER_NAME> {
+
+    /**
+    * @Route( {
+    *      name: "index",
+    *      methods: ["GET"],
+    *      path: "/"
+    * } )
+    */
+    index( request, response ) {
+
+        response.status( 200 ) ;
+
+        response.type( 'html' ) ;
+
+        response.render( '<CONTROLLER_NAME|lower>/index' , {
+            controller: '<CONTROLLER_NAME>'
+        } ) ;
+    }
+
+} ;
+
+module.exports = <CONTROLLER_NAME> ;

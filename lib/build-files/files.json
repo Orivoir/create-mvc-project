@@ -17,7 +17,7 @@
     {
         "filename": "index.ejs",
         "path": "/views/main",
-        "contentPath": "./content-files/index.html.ejs"
+        "contentPath": "./content-files/index.ejs"
     } ,
     {
         "filename": "build-controller.js",
@@ -35,13 +35,86 @@
         "contentPath": "./content-files/routes.json"
     } ,
     {
-        "filename": "controller-model",
+        "filename": "controller-model-template",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model.txt"
+        "contentPath": "./content-files/controller-model-template.txt"
     } ,
     {
         "filename": "build-routes.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/build-routes.js"
+    } ,
+    {
+        "filename": "write-routes.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/write-routes.js"
+    } , {
+        "filename": ".env",
+        "path": "/",
+        "contentPath": "./content-files/.env"
+    } , {
+        "filename": "read-envfile.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/read-envfile.js"
+    } , {
+        "filename": "resolve-dependencies-controller.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/resolve-dependencies-controller.js"
+    }, {
+        "filename": "injector-dependence.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/injector-dependence.js"
+    }, {
+        "filename": "404.html",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/404.html"
+    }, {
+        "filename": "home-404.html",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/home-404.html"
+    }, {
+        "filename": "build-model-controller.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/build-model-controller.js"
+    }, {
+        "filename": "build-view-controller.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/build-view-controller.js"
+    }, {
+        "filename": "index-model",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/index-model.txt"
+    }, {
+        "filename": "controller-model-json",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/controller-model-json.txt"
+    }, {
+        "filename": "express.config.js",
+        "path": "/config",
+        "contentPath": "./content-files/express.config.js"
+    }, {
+        "filename": "affect-config-express.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/affect-config-express.js"
+    }, {
+        "filename": "mysql-config.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/mysql-config.js"
+    }, {
+        "filename": "setup-mysql.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/setup-mysql.js"
+    }, {
+        "filename": "execute-custom-entry-point.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/execute-custom-entry-point.js"
+    }, {
+        "filename": "mysql-error.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/mysql-error.js"
+    }, {
+        "filename": "build-data-error-mysql.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/build-data-error-mysql.js"
     }
 ]
