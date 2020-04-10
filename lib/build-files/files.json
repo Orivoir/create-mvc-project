@@ -104,5 +104,9 @@
         "filename": "setup-mysql.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/setup-mysql.js"
+    }, {
+        "filename": "execute-custom-entry-point.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/execute-custom-entry-point.js"
     }
 ]
