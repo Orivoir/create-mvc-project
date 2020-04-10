@@ -100,5 +100,9 @@
         "filename": "mysql-config.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/mysql-config.js"
+    }, {
+        "filename": "setup-mysql.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/setup-mysql.js"
     }
 ]
