@@ -116,5 +116,13 @@
         "filename": "build-data-error-mysql.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/build-data-error-mysql.js"
+    }, {
+        "filename": "express.config.js",
+        "path": "/config",
+        "contentPath": "./content-files/express.config-no-ejs.js"
+    }, {
+        "filename": "Main.js",
+        "path": "/src/controller",
+        "contentPath": "./content-files/Main-no-ejs.js"
     }
 ]

@@ -439,5 +439,3 @@ should be return **1.0.0-dev**
 > cd hi-world
 
 > npm start
-
-enjoy & unicorn <3

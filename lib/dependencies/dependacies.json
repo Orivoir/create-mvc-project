@@ -1,0 +1,25 @@
+[
+    {
+        "name": "class-annotations@0.8.0",
+        "mode": "--save",
+        "author": "<https://github.com/Orivoir/>"
+    },
+    {
+        "name": "express" ,
+        "mode": "--save",
+        "author": ""
+    },
+    {
+        "name": "ejs",
+        "mode": "--save",
+        "author": "<https://github.com/mde/>"
+    } , {
+        "name": "chalk",
+        "mode": "--save-dev",
+        "author": "<https://github.com/chalk/>"
+    } , {
+        "name": "parse-database-url" ,
+        "mode": "--save" ,
+        "author": "<https://github.com/pwnall/>"
+    }
+]

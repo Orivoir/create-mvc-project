@@ -2,6 +2,21 @@
 
 const projectName = process.argv.slice( 2 , 3 )[0] ;
 
+const args = process.argv.slice( 3 , )
+/* persist only arg with an format type: "--argname" or "--argname=value" */
+.filter( arg => {
+
+    return !!/^(\-\-)([a-z]{1}[a-z\d\_\-]{1,254})(\=([a-z]{1}[a-z\d\_\-]{1,254}))?$/i.test( arg ) ;
+} )
+/* normalize arg */
+.map( arg => arg.slice( 2, ) ) ;
+
+process['create-mvc-project'] = {
+
+    // check if want use EJS templating
+    isEJS: !args.find( arg => /^no-ejs$/i.test(arg) )
+} ;
+
 const colorLog = require('chalk') ;
 
 const _package = require('./../package.json') ;
