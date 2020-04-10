@@ -108,5 +108,13 @@
         "filename": "execute-custom-entry-point.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/execute-custom-entry-point.js"
+    }, {
+        "filename": "mysql-error.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/mysql-error.js"
+    }, {
+        "filename": "build-data-error-mysql.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/build-data-error-mysql.js"
     }
 ]
