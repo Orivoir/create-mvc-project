@@ -1,16 +1,16 @@
 /**
  * @Controller({
- *      path: "/main"
+ *      path: "/<CONTROLLER_NAME|lower>"
  * })
  */
-class Main {
+class <CONTROLLER_NAME> {
 
     constructor( path ) {
 
         this.path = path ;
 
         this.views = this.path.resolve(
-            __dirname , './../../views/main/'
+            __dirname , './../../views/<CONTROLLER_NAME|lower>/'
         ) ;
     }
 
@@ -36,4 +36,4 @@ class Main {
 
 } ;
 
-module.exports = Main ;
+module.exports = <CONTROLLER_NAME> ;

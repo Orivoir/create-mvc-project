@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>root controller</title>
+    </head>
+
+    <body>
+
+        <h1>
+            Welcome at&nsbp;
+            <script>
+                document.write( document.location.pathname )
+            </script>
+            &nsbp;contoller
+        </h1>
+
+    </body>
+</html>

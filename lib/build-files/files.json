@@ -37,7 +37,7 @@
     {
         "filename": "controller-model-template",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model-template.txt"
+        "contentPath": "./content-files/controller-model-ejs.txt"
     } ,
     {
         "filename": "build-routes.js",
@@ -83,7 +83,7 @@
     }, {
         "filename": "index-model",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/index-model.txt"
+        "contentPath": "./content-files/index-model-ejs.txt"
     }, {
         "filename": "controller-model-json",
         "path": "/mvc-vendor",
@@ -132,5 +132,13 @@
         "filename": "storage-install.json",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/storage-install.json"
+    }, {
+        "filename": "index-model",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/index-model-no-ejs.txt"
+    }, {
+        "filename": "controller-model-template",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/controller-model-no-ejs.txt"
     }
 ]
