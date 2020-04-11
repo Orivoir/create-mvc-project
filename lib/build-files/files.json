@@ -5,6 +5,16 @@
         "contentPath": "./content-files/_package.json"
     } ,
     {
+        "filename": "extract-constructor-header.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/extract-constructor-header.js"
+    } ,
+    {
+        "filename": "extract-dependencies-list.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/extract-dependencies-list.js"
+    } ,
+    {
         "filename": "kernel.js",
         "path": "/",
         "contentPath": "./content-files/_index.js"
