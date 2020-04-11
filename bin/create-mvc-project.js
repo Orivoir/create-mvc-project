@@ -50,22 +50,44 @@ if( isValidProjectName( projectName ) ) {
 
     const startTime = Date.now() ;
 
-    console.log( colorLog.green.bold( `init a new MVC project for: "${projectName}"\n` ) ) ;
+    const cfonts = require('cfonts') ;
+
+    cfonts.say(
+        `C.M.P` ,
+        {
+            env: 'node',
+            space: true,
+            gradient: ["blue","#2AB92A"],
+            transitionGradient: true,
+        }
+    ) ;
+
+    console.log(colorLog`VERSION {green.bold ${_package.version}}`) ;
+
+    console.log( colorLog`\ninit a new CMP project for {cyan.bold ${projectName}}\n` ) ;
+
+
+    if( args.includes('header-mode') ) {
+
+        process.exit() ;
+    }
 
     const buildFolders = require('./../lib/build-folders/endpoint') ;
     const buildFiles = require('./../lib/build-files/endpoint') ;
     const resolveDependencies = require('./../lib/dependencies/endpoint') ;
 
     buildFolders( {
-        projectName
+        projectName,
+        args
     } ) ;
 
     console.log(
-        colorLog.green.bold( `start create files for: "${projectName}"\n`)
+        colorLog`start create files for: {cyan.bold ${projectName}}\n`
     ) ;
 
     buildFiles({
-        projectName
+        projectName,
+        args
     } ) ;
 
     console.log(
@@ -75,23 +97,40 @@ if( isValidProjectName( projectName ) ) {
     // clean storage install after build files
     writeStorageInstall( [] ) ;
 
-    console.log(
-        colorLog.green.bold(`\nstart install dependencies form NPM:\n`)
-    ) ;
+    if( !args.includes('no-npm') ) {
 
-    resolveDependencies( {
-        projectName
-    } ) ;
+        console.log(
+            colorLog`\nstart install dependencies form {red.bold NPM}:\n`
+        ) ;
 
-    console.log(
-        colorLog.green.bold(`project init in: ${ Date.now()-startTime}ms`)
-    ) ;
+        resolveDependencies( {
+            projectName
+        } ) ;
+    }
 
-    console.log(
-        colorLog.cyan.bold(
-            `\n> cd ${projectName}\n\n> npm start\n\nenjoy and unicorn power <3 !\n
-        `)
-    ) ;
+    const cliui = require('cliui')() ;
+
+    cliui.div({
+        text: colorLog`project init in: {green.bold ${ Date.now()-startTime}ms}` ,
+        width: 80,
+        padding: [1,8,2,0]
+    }) ;
+
+    cliui.div({
+        text: colorLog`\n> cd {cyan.bold ${projectName}}\n\n> npm start`,
+        width: 80,
+        padding: [1,8,2,0]
+    }) ;
+
+    cliui.div({
+        text: colorLog`enjoy and unicorn power {red.bold <3} !\n`,
+        width: 60,
+        padding: [0,0,0,0],
+        align: 'right'
+    }) ;
+
+    console.log( cliui.toString() ) ;
+
 
     process.exit() ;
 

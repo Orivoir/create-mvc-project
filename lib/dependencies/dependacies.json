@@ -6,7 +6,7 @@
     }, {
         "name": "express" ,
         "mode": "--save",
-        "author": ""
+        "author": "<https://github.com/expressjs/express/>"
     }, {
         "name": "ejs",
         "mode": "--save",
@@ -22,6 +22,6 @@
     }, {
         "name": "cliui" ,
         "mode": "--save" ,
-        "author": "<github.com/yargs/>"
+        "author": "<https://github.com/yargs/>"
     }
 ]
