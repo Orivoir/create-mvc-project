@@ -2,6 +2,9 @@
 
 const projectName = process.argv.slice( 2 , 3 )[0] ;
 
+const fs = require('fs') ;
+const pathResolver = require('path') ;
+
 const args = process.argv.slice( 3 , )
 /* persist only arg with an format type: "--argname" or "--argname=value" */
 .filter( arg => {
@@ -16,6 +19,22 @@ process['create-mvc-project'] = {
     // check if want use EJS templating
     isEJS: !args.find( arg => /^no-ejs$/i.test(arg) )
 } ;
+
+
+// write args install in a storage JSON
+// for persist integrity CLI destribute post install
+const writeStorageInstall = data => {
+
+    fs.writeFileSync(
+        pathResolver.join(
+            __dirname,
+            './../lib/build-files/content-files/storage-install.json'
+        ) ,
+        JSON.stringify( data )
+    ) ;
+} ;
+
+writeStorageInstall( args ) ;
 
 const colorLog = require('chalk') ;
 
@@ -50,6 +69,13 @@ if( isValidProjectName( projectName ) ) {
     } ) ;
 
     console.log(
+        colorLog.yellow.bold('\nclean local storage args install\n')
+    ) ;
+
+    // clean storage install after build files
+    writeStorageInstall( [] ) ;
+
+    console.log(
         colorLog.green.bold(`\nstart install dependencies form NPM:\n`)
     ) ;
 
@@ -62,8 +88,12 @@ if( isValidProjectName( projectName ) ) {
     ) ;
 
     console.log(
-        colorLog.cyan.bold(`\n> cd ${projectName}\n\n> npm start\n\nenjoy and unicorn power <3 !\n`)
+        colorLog.cyan.bold(
+            `\n> cd ${projectName}\n\n> npm start\n\nenjoy and unicorn power <3 !\n
+        `)
     ) ;
+
+    process.exit() ;
 
 } else {
 
@@ -75,6 +105,8 @@ if( isValidProjectName( projectName ) ) {
             colorLog.green.bold( _package.version + "\n" )
         ) ;
 
+        process.exit() ;
+
     } else if( /^(\-\-?)(author|owner)$/i.test(projectName) ) {
 
         console.log(
@@ -83,11 +115,15 @@ if( isValidProjectName( projectName ) ) {
             )
         ) ;
 
+        process.exit() ;
+
     } else {
 
         console.log(
             colorLog.red.bold( `Error: "${projectName}" , is not a valid project name` )
         ) ;
+
+        process.exit() ;
     }
 
 }

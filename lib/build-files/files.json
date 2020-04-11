@@ -128,5 +128,9 @@
         "filename": "normalize-package-name.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/normalize-package-name.js"
+    }, {
+        "filename": "storage-install.json",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/storage-install.json"
     }
 ]
