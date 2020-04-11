@@ -1,0 +1,15 @@
+[
+    {
+        "entry": "./files/extract-constructor-header/class-0.js",
+        "output": "./files/extract-constructor-header/class-0.txt"
+    }, {
+        "entry": "./files/extract-constructor-header/class-1.js",
+        "output": "./files/extract-constructor-header/class-1.txt"
+    }, {
+        "entry": "./files/extract-constructor-header/class-2.js",
+        "output": "./files/extract-constructor-header/class-2.txt"
+    }, {
+        "entry": "./files/extract-constructor-header/class-3.js",
+        "output": "./files/extract-constructor-header/class-3.txt"
+    }
+]

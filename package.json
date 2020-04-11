@@ -6,12 +6,22 @@
   "bin": {
     "create-mvc-project": "./bin/create-mvc-project.js"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "mocha ./test",
+    "coverage": "nyc npm test"
+  },
   "keywords": [],
   "author": "Gaboriau Samuel <https://github.com/Orivoir>",
   "license": "ISC",
   "dependencies": {
     "build-directories": "^1.0.1",
-    "chalk": "^4.0.0"
+    "cfonts": "^2.8.1",
+    "chalk": "^4.0.0",
+    "cliui": "^6.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1"
   }
 }

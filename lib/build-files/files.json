@@ -5,6 +5,16 @@
         "contentPath": "./content-files/_package.json"
     } ,
     {
+        "filename": "extract-constructor-header.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/extract-constructor-header.js"
+    } ,
+    {
+        "filename": "extract-dependencies-list.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/extract-dependencies-list.js"
+    } ,
+    {
         "filename": "kernel.js",
         "path": "/",
         "contentPath": "./content-files/_index.js"
@@ -37,7 +47,7 @@
     {
         "filename": "controller-model-template",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model-template.txt"
+        "contentPath": "./content-files/controller-model-ejs.txt"
     } ,
     {
         "filename": "build-routes.js",
@@ -83,7 +93,7 @@
     }, {
         "filename": "index-model",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/index-model.txt"
+        "contentPath": "./content-files/index-model-ejs.txt"
     }, {
         "filename": "controller-model-json",
         "path": "/mvc-vendor",
@@ -124,5 +134,25 @@
         "filename": "Main.js",
         "path": "/src/controller",
         "contentPath": "./content-files/Main-no-ejs.js"
+    }, {
+        "filename": "normalize-package-name.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/normalize-package-name.js"
+    }, {
+        "filename": "storage-install.json",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/storage-install.json"
+    }, {
+        "filename": "index-model",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/index-model-no-ejs.txt"
+    }, {
+        "filename": "controller-model-template",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/controller-model-no-ejs.txt"
+    }, {
+        "filename": "index.html",
+        "path": "/views/main/",
+        "contentPath": "./content-files/index-no-ejs.html"
     }
 ]

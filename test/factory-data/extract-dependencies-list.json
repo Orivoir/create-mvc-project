@@ -1,0 +1,13 @@
+[
+    {
+        "entry": "constructor( chalk,path,dao",
+        "output": ["chalk","path","dao"]
+    },
+    {
+        "entry": "constructor(chalk ,path, dao",
+        "output": ["chalk","path","dao"]
+    },{
+        "entry": "constructor(   chalk,path,   dao   ",
+        "output": ["chalk","path","dao"]
+    }
+]
