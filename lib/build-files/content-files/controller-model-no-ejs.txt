@@ -28,7 +28,7 @@ class <CONTROLLER_NAME> {
         response.type( 'html' ) ;
 
         response.sendFile(
-            this.path(
+            this.path.resolve(
                 this.views , 'index.html'
             )
         ) ;

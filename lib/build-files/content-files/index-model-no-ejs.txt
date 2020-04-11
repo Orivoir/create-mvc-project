@@ -11,11 +11,11 @@
     <body>
 
         <h1>
-            Welcome at&nsbp;
+            Welcome at&nbsp;
             <script>
                 document.write( document.location.pathname )
             </script>
-            &nsbp;contoller
+            &nbsp;contoller
         </h1>
 
     </body>
