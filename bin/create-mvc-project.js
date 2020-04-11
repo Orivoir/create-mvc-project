@@ -100,7 +100,7 @@ if( isValidProjectName( projectName ) ) {
     if( !args.includes('no-npm') ) {
 
         console.log(
-            colorLog`\nstart install dependencies form {red.bold NPM}:\n`
+            colorLog`\nstart install dependencies from {red.bold NPM}:\n`
         ) ;
 
         resolveDependencies( {

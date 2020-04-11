@@ -140,5 +140,9 @@
         "filename": "controller-model-template",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/controller-model-no-ejs.txt"
+    }, {
+        "filename": "index.html",
+        "path": "/views/main/",
+        "contentPath": "./content-files/index-no-ejs.html"
     }
 ]
