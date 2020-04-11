@@ -1,3 +1,4 @@
+dist: trusty
 language: node_js
 
 node_js:
@@ -18,6 +19,5 @@ install:
   - npm install --save-dev nyc
   - npm install --save-dev mocha
   - npm install -save-dev chai
-  - npm install socket.io
 script:
   - npm run coverage
