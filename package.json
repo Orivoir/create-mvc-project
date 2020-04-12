@@ -7,7 +7,7 @@
     "create-mvc-project": "./bin/create-mvc-project.js"
   },
   "scripts": {
-    "test": "mocha ./test",
+    "test": "mocha",
     "coverage": "nyc npm test"
   },
   "keywords": [],
@@ -17,10 +17,12 @@
     "build-directories": "^1.0.1",
     "cfonts": "^2.8.1",
     "chalk": "^4.0.0",
-    "cliui": "^6.0.0"
+    "cliui": "^6.0.0",
+    "ora": "^4.0.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
+    "class-annotations": "0.9.0-beta",
     "mocha": "^7.1.1",
     "nyc": "^15.0.1"
   }

@@ -1,6 +1,6 @@
 [
     {
-        "name": "class-annotations@0.8.0",
+        "name": "class-annotations@0.9.0-beta",
         "mode": "--save",
         "author": "<https://github.com/Orivoir/>"
     }, {
