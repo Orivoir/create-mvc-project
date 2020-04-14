@@ -4,6 +4,10 @@
         "mode": "--save",
         "author": "<https://github.com/Orivoir/>"
     }, {
+        "name": "array-key-object-uniq" ,
+        "mode": "--save" ,
+        "author": "<https://github.com/Orivoir/>"
+    }, {
         "name": "express" ,
         "mode": "--save",
         "author": "<https://github.com/expressjs/express/>"

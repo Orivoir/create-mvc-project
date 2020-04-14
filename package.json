@@ -21,6 +21,7 @@
     "ora": "^4.0.3"
   },
   "devDependencies": {
+    "array-key-object-uniq": "^0.5.0",
     "chai": "^4.2.0",
     "class-annotations": "0.9.4-beta",
     "mocha": "^7.1.1",
