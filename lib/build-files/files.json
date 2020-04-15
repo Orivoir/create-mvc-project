@@ -70,7 +70,7 @@
     } , {
         "filename": ".env",
         "path": "/",
-        "contentPath": "./content-files/.env-no-sql"
+        "contentPath": "./content-files/NO-SQL/.env-no-sql"
     } , {
         "filename": "read-envfile.js",
         "path": "/mvc-vendor",
@@ -122,7 +122,7 @@
     }, {
         "filename": "setup-mysql.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/SQL/setup-mysql.js"
+        "contentPath": "./content-files/SQL/mysql-setup.js"
     }, {
         "filename": "execute-custom-entry-point.js",
         "path": "/mvc-vendor",
@@ -134,7 +134,7 @@
     }, {
         "filename": "build-data-error-mysql.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/SQL/build-data-error-mysql.js"
+        "contentPath": "./content-files/SQL/mysql-build-data-error.js"
     }, {
         "filename": "express.config.js",
         "path": "/config",
