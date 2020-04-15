@@ -12,12 +12,12 @@
     {
         "filename": "extract-constructor-header.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/extract-constructor-header.js"
+        "contentPath": "./content-files/controllers/extract-constructor-header.js"
     } ,
     {
         "filename": "extract-dependencies-list.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/extract-dependencies-list.js"
+        "contentPath": "./content-files/controllers/extract-dependencies-list.js"
     } ,
     {
         "filename": "kernel.js",
@@ -78,11 +78,11 @@
     } , {
         "filename": "resolve-dependencies-controller.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/resolve-dependencies-controller.js"
+        "contentPath": "./content-files/controllers/resolve-dependencies-controller.js"
     }, {
         "filename": "injector-dependence.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/injector-dependence.js"
+        "contentPath": "./content-files/controllers/injector-dependence.js"
     }, {
         "filename": "404.html",
         "path": "/mvc-vendor",
