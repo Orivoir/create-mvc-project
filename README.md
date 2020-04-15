@@ -368,7 +368,7 @@ currently you can configure [Express](#express) from: **/config/express.config.j
 
 ### express
 
-(Express)[https://www.npmjs.com/package/express] is the HTTP router integrate by
+[Express](https://www.npmjs.com/package/express) is the HTTP router integrate by
 **create-mvc-project** , but express can be extends beyond of basic HTTP router
 with **middleware** system.
 
