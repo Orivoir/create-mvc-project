@@ -1,7 +1,11 @@
 [
     {
-        "name": "class-annotations@0.8.0",
+        "name": "class-annotations@0.9.4-beta",
         "mode": "--save",
+        "author": "<https://github.com/Orivoir/>"
+    }, {
+        "name": "array-key-object-uniq" ,
+        "mode": "--save" ,
         "author": "<https://github.com/Orivoir/>"
     }, {
         "name": "express" ,

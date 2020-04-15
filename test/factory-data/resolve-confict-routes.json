@@ -1,0 +1,116 @@
+[
+    {
+        "routes": [
+            {
+                "name": "foo_index",
+                "controller": "Foo",
+                "methodName": "index",
+                "path": "/foo/"
+            }, {
+                "name": "foo_bar",
+                "controller": "Foo",
+                "methodName": "bar",
+                "path": "/foo/bar"
+            }, {
+                "name": "foo_contact",
+                "controller": "Foo",
+                "methodName": "contact",
+                "path": "/foo/contact"
+            }
+        ] ,
+        "isConflict": false
+    } ,
+    {
+        "routes": [
+            {
+                "name": "foo_index",
+                "controller": "Foo",
+                "methodName": "index",
+                "path": "/foo/"
+            }, {
+                "name": "foo_bar",
+                "controller": "Foo",
+                "methodName": "bar",
+                "path": "/foo/"
+            }, {
+                "name": "foo_contact",
+                "controller": "Foo",
+                "methodName": "contact",
+                "path": "/foo/contact"
+            }
+        ] ,
+        "isConflict": true
+    } ,
+    {
+        "routes": [
+            {
+                "name": "foo_index",
+                "controller": "Foo",
+                "methodName": "index",
+                "path": "/foo/"
+            }, {
+                "name": "foo_bar",
+                "controller": "Foo",
+                "methodName": "index",
+                "path": "/foo/bar"
+            }, {
+                "name": "foo_contact",
+                "controller": "Foo",
+                "methodName": "contact",
+                "path": "/foo/"
+            }
+        ] ,
+        "isConflict": true
+    } ,
+    {
+        "routes": [
+            {
+                "name": "foo_index",
+                "controller": "Foo",
+                "methodName": "index",
+                "path": "/foo/"
+            }, {
+                "name": "foo_bar",
+                "controller": "Foo",
+                "methodName": "bar",
+                "path": "/foo/bar"
+            }, {
+                "name": "foo_contact",
+                "controller": "Foo",
+                "methodName": "contact",
+                "path": "/foo/contact"
+            } , {
+                "name": "foo_about",
+                "controller": "Foo",
+                "methodName": "about",
+                "path": "/foo/about"
+            }
+        ] ,
+        "isConflict": false
+    } , {
+        "routes": [
+            {
+                "name": "foo_index",
+                "controller": "Foo",
+                "methodName": "index",
+                "path": "/foo/"
+            }, {
+                "name": "foo_bar",
+                "controller": "Foo",
+                "methodName": "bar",
+                "path": "/foo/bar"
+            }, {
+                "name": "foo_contact",
+                "controller": "Foo",
+                "methodName": "contact",
+                "path": "/foo/contact"
+            } , {
+                "name": "foo_about",
+                "controller": "Foo",
+                "methodName": "contact",
+                "path": "/foo/about"
+            }
+        ] ,
+        "isConflict": true
+    }
+]

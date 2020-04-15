@@ -5,6 +5,11 @@
         "contentPath": "./content-files/_package.json"
     } ,
     {
+        "filename": "resolve-conflict-routes.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/resolve-conflict-routes.js"
+    } ,
+    {
         "filename": "extract-constructor-header.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/extract-constructor-header.js"
@@ -61,7 +66,11 @@
     } , {
         "filename": ".env",
         "path": "/",
-        "contentPath": "./content-files/.env"
+        "contentPath": "./content-files/.env-sql"
+    } , {
+        "filename": ".env",
+        "path": "/",
+        "contentPath": "./content-files/.env-no-sql"
     } , {
         "filename": "read-envfile.js",
         "path": "/mvc-vendor",

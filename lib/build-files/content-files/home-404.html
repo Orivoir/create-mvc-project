@@ -4,11 +4,195 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+
         <!-- CMP create-mvc-project -->
-        <title>Welcome CMP</title>
+        <title>Welcome Create MVC Project</title>
 
         <!-- not access to static directory -->
         <style>
+
+            * {
+                margin: 0;
+                box-sizing: border-box:
+            }
+
+            body,html {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                background-color: rgb( 238,238,238 );
+            }
+
+            header {
+
+                background: rgb( 42,42,42 ) ;
+                color: #fff;
+                padding: 2vh 0;
+                margin-bottom: 2.85vh;
+
+                display: flex;
+                flex-direction: column;
+
+                justify-content: center;
+
+                align-items: center;
+            }
+
+            header h1 {
+
+                margin: 1.425vh  0;
+            }
+
+            header h2 {
+
+                color: rgb( 186,42,42 ) ;
+                letter-spacing: .13rem;
+            }
+
+            header h1 strong {
+
+                color: #319d9d;
+                letter-spacing: .2rem;
+            }
+
+            #main-content {
+
+                width: 62%;
+                min-width: 320px;
+                margin: auto;
+            }
+
+            .section-partial {
+
+                margin: 2.85vh 0;
+                background: rgb( 220,220,220 ) ;
+                padding: 1.425vh;
+                border-radius: 3px;
+            }
+
+            .cmd-wrap::before {
+
+                content: "> " ;
+            }
+
+            .cmd-wrap {
+
+                margin: 1.425vh 0;
+
+                padding: 1.425vh 0;
+                padding-left: 2.85vh;
+
+                border-left: 5px solid rgb( 85,85,85 ) ;
+
+                letter-spacing: .08rem;
+
+                font-size: 18px;
+
+                background: rgb( 195,195,195 ) ;
+            }
+
+            .path-wrap::before,
+            .path-wrap::after {
+
+                content: '"';
+            }
+
+            .path-wrap {
+
+                margin: 1.425vh 0;
+
+                margin-left: 1.425vh;
+
+                font-size: 18px;
+                letter-spacing: .08rem;
+
+                border: 2px solid rgb( 85,85,85 ) ;
+
+                display: inline-block;
+
+                border-radius: 3px;
+
+                padding: 1.425vh;
+
+                background: rgb( 195,195,195 );
+            }
+
+            footer {
+
+                display: flex;
+
+                justify-content: space-around;
+
+                padding: 2.85vh 0;
+                background: rgb( 42,42,42 );
+
+            }
+
+            footer ion-icon {
+
+                color: #fff;
+            }
+
+            footer a {
+
+                color: #fff;
+
+                font-size: 16px;
+
+                text-decoration: none;
+
+                transition: .2s ease-in-out all;
+
+                position: relative;
+            }
+
+            footer a:hover::before {
+
+                transform: scaleX(1) ;
+            }
+
+            footer a::before {
+
+                content: "";
+
+                transition: .2s ease-in-out all;
+
+                position: absolute;
+
+                left: 0;
+
+                top:  calc( 100% + 3px ) ;
+
+                width: 100%;
+                height: 3px;
+
+                background: #fff;
+
+                border-radius: 3px;
+
+                transform-origin: top left;
+                transform: scaleX( 0 ) ;
+            }
+
+            @media screen and ( max-width: 650px ) , ( max-height: 500px ) {
+
+                #main-content {
+
+                    width: 95%;
+                }
+
+                header h1 strong, header h1 small  {
+
+                    font-size: 23px;
+                    letter-spacing: .13rem;
+                }
+
+                header h1 {
+
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
 
         </style>
     </head>
@@ -26,18 +210,17 @@
                         create-mvc-project
                     </strong>
                     <small class="version">
-                        x.x.x-
+                        0.1.0-
                         <span class="version-pre-release">
-                            releaseType
+                            alpha
                         </span>
                     </small>
                 </h1>
 
                 <h2>404 not found for: "/"</h2>
-
             </header>
 
-            <section>
+            <div id="main-content">
 
                 <div class="section-partial">
                     <h2>
@@ -63,17 +246,6 @@
 
                 <div class="section-partial">
 
-
-                    <h2>views folder</h2>
-
-                    <div class="path-wrap">
-                        ./views/*
-                    </div>
-
-                </div>
-
-                <div class="section-partial">
-
                     <h2>debug router</h2>
 
                     <div class="cmd-wrap">
@@ -82,29 +254,41 @@
 
                 </div>
 
-                <div class="section-partial">
+                <footer>
 
                     <p>
-                        <a href="#">
+                        <a
+                            href="https://github.com/Orivoir/create-mvc-project/blob/master/README.md"
+                            target="_blank"
+                        >
+                            <ion-icon name="book-outline" ></ion-icon>
                             documentation
                         </a>
                     </p>
 
                     <p>
-                        <a href="https://github.com/Orivoir/create-mvc-project/">
+                        <a
+                            href="https://github.com/Orivoir/create-mvc-project/"
+                            target="_blank"
+                        >
+                            <ion-icon name="logo-github"></ion-icon>
                             github
                         </a>
                     </p>
 
                     <p>
-                        <a href="https://www.npmjs.com/package/create-mvc-project">
+                        <a
+                            href="https://www.npmjs.com/package/create-mvc-project"
+                            target="_blank"
+                        >
+                            <ion-icon name="logo-npm"></ion-icon>
                             NPM Package
                         </a>
                     </p>
 
-                </div>
+                </footer>
 
-            </section>
+            </div>
 
         </main>
 
