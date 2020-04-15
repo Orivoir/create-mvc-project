@@ -2,7 +2,7 @@
     {
         "filename": "package.json",
         "path": "/",
-        "contentPath": "./content-files/_package.json"
+        "contentPath": "./content-files/metadata/_package.json"
     } ,
     {
         "filename": "resolve-conflict-routes.js",
@@ -47,7 +47,7 @@
     {
         "filename": "routes.json",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/routes.json"
+        "contentPath": "./content-files/metadata/routes.json"
     } ,
     {
         "filename": "controller-model-template",
@@ -150,7 +150,7 @@
     }, {
         "filename": "storage-install.json",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/storage-install.json"
+        "contentPath": "./content-files/metadata/storage-install.json"
     }, {
         "filename": "index-model",
         "path": "/mvc-vendor",
