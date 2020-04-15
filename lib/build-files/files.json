@@ -27,12 +27,12 @@
     {
         "filename": "Main.js",
         "path": "/src/controller",
-        "contentPath": "./content-files/Main.js"
+        "contentPath": "./content-files/EJS/Main.js"
     } ,
     {
         "filename": "index.ejs",
         "path": "/views/main",
-        "contentPath": "./content-files/index.ejs"
+        "contentPath": "./content-files/EJS/index.ejs"
     } ,
     {
         "filename": "build-controller.js",
@@ -110,7 +110,7 @@
     }, {
         "filename": "express.config.js",
         "path": "/config",
-        "contentPath": "./content-files/express.config.js"
+        "contentPath": "./content-files/EJS/express.config.js"
     }, {
         "filename": "affect-config-express.js",
         "path": "/mvc-vendor",
