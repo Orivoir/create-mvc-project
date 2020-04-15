@@ -1,0 +1,1 @@
+class Main{a(){}constructor(n,e,t){}index(n,e){e.status(200),e.type("html"),e.render("main/index",{controller:"Main"})}}module.exports=Main;

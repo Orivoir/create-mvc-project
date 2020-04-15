@@ -1,10 +1,8 @@
-# This file is the first prototype of the documentation of this project
-
 Please if you detect a error inside documentation or if you have
 a best precision of english langague push a pull request or open
 a new [issue](https://github.com/Orivoir/create-mvc-project/issues/new)
 
-# [create-mvc-project](https://github.com/Orivoir/create-mvc-project)
+# [create-mvc-project](https://github.com/Orivoir/create-mvc-project) version 0.1.0-alpha
 
 > build your will flexible new project with a standard model view controller structure and enjoy with integrate console, make yourcontroller in one command , define your route with annotations and other...
 
@@ -13,6 +11,7 @@ a new [issue](https://github.com/Orivoir/create-mvc-project/issues/new)
 - [installation](#installation)
 
 - [create new project](#create-new-project)
+    - [options](#create-new-project-options)
 
 - [controller](#controller)
     - [make controller](#make-controller)
@@ -35,21 +34,34 @@ a new [issue](https://github.com/Orivoir/create-mvc-project/issues/new)
 
 - [currently state of project](#currently-state-of-project)
 
-## [installation](https://www.npmjs.com/package/create-mvc-project)
+## installation
 
 > npm install create-mvc-project --global
 
 > yarn global add create-mvc-project
 
+- do not install outside global context
 
 ## create new project
 
-> create-mvc-project hello-world
+> create-mvc-project hello-world [--options]
 
 > cd hello-world
 
 > npm start
 
+### create new project options
+
+with not options **create-mvc-project** initialize a new project with
+[EJS](https://www.npmjs.com/package/ejs) as **templates** and *presets* for **MySQL**
+inside ["./.env" file](#env)
+
+if you want use a another template you can give *option*: **--no-ejs**
+and if you dont want use **MySQL** or **MariaDB** as *database* you can
+give *option*: **no-sql*
+
+*e.g*:
+> create-mvc-project hello-world --no-ejs --no-sql
 
 ## controller
 
@@ -80,12 +92,14 @@ class Foo {
 
         response.status( 200 ) ;
 
-        response.type('html') ;
+        response.type('json') ;
 
-        response.render('foo/index', {
+        response.json({
+            status: 200,
+            success: true,
 
-            controller: 'Foo'
-        } ) ;
+            details: "unicorn power <3"
+        }) ;
     }
 
 } ;
@@ -93,7 +107,7 @@ class Foo {
 module.exports = Foo ;
 ```
 
-But you can automate task of create a new **controller** with the console [console](#make-controller-cli)
+But you can automate task of create a new **controller** with the console [console](#make-controller-cli) integrate with **create-mvc-project**
 
 ### routes
 
@@ -212,6 +226,14 @@ you can ask routes of only specific controller with controller name in **arg 2**
 
 > node ./bin/console router Foo
 
+if you have an conflict routes duplicate: name, path or Controller.name
+you receveid a **static message**:
+
+> Error: route define have conflict duplicate of: path, Controller.method or name
+
+you should mannually search the duplicate error
+the precision error message will optimize before first **beta** version
+
 ### debug mysql CLI
 
 if you have config your MySQL database server from [.env file](#env)
@@ -300,7 +322,7 @@ you receveid error message:
 
 **package: "dao" , not found, try: npm install dao --save**
 
-but you can skip this message and config your **MySQL** database.
+but you can skip this message and config your **MySQL** database inside ["./.env" file](#env).
 
 ### custom entry point
 
@@ -335,6 +357,9 @@ module.exports = function(
 }
 ```
 
+if you have needs execute any config before start HTTP server you can
+use the key: `ENTRY_POINT_FIRST_TIME` from the **"./.env" file**
+
 ## config
 
 **create-mvc-project** have defined a folder **/config** at project root
@@ -343,7 +368,7 @@ currently you can configure [Express](#express) from: **/config/express.config.j
 
 ### express
 
-(Express)[https://www.npmjs.com/package/express] is the HTTP router integrate by
+[Express](https://www.npmjs.com/package/express) is the HTTP router integrate by
 **create-mvc-project** , but express can be extends beyond of basic HTTP router
 with **middleware** system.
 
@@ -424,18 +449,20 @@ you can give the **arg** **--no-ejs** during **install** command.
 
 ## currently state of project
 
-currently this project is not ready for a first usage from NPM but if you want test the dev version
-you can:
+currently this project is in **alpha** version it's **not recommended** usage in production before version: **1.0.0**
+but you can have *overview* of **create-mvc-project**
+in local usage.
 
-> git clone https://github.com/Orivoir/create-mvc-project.git
+> npm install create-mvc-project --global
 
+> yarn global add create-mvc-project
 
-> create-mvc-project --version
+> cd my-work-folder
 
-should be return **1.0.0-dev**
+> create-mvc-project hello-world
 
-> create-mvc-project hi-world
-
-> cd hi-world
+> cd hello-world
 
 > npm start
+
+enjoy & unicorn power <3

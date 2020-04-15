@@ -2,6 +2,9 @@
 
 const projectName = process.argv.slice( 2 , 3 )[0] ;
 
+const fs = require('fs') ;
+const pathResolver = require('path') ;
+
 const args = process.argv.slice( 3 , )
 /* persist only arg with an format type: "--argname" or "--argname=value" */
 .filter( arg => {
@@ -14,8 +17,26 @@ const args = process.argv.slice( 3 , )
 process['create-mvc-project'] = {
 
     // check if want use EJS templating
-    isEJS: !args.find( arg => /^no-ejs$/i.test(arg) )
+    isEJS: !args.find( arg => /^no-ejs$/i.test(arg) ) ,
+
+    isMySQL: !args.find( arg => /^no-(my)?sql$/i.test(arg) )
 } ;
+
+
+// write args install in a storage JSON
+// for persist integrity CLI destribute post install
+const writeStorageInstall = data => {
+
+    fs.writeFileSync(
+        pathResolver.join(
+            __dirname,
+            './../lib/build-files/content-files/storage-install.json'
+        ) ,
+        JSON.stringify( data )
+    ) ;
+} ;
+
+writeStorageInstall( args ) ;
 
 const colorLog = require('chalk') ;
 
@@ -31,39 +52,92 @@ if( isValidProjectName( projectName ) ) {
 
     const startTime = Date.now() ;
 
-    console.log( colorLog.green.bold( `init a new MVC project for: "${projectName}"\n` ) ) ;
+    const cfonts = require('cfonts') ;
+
+    cfonts.say(
+        `C.M.P` ,
+        {
+            env: 'node',
+            space: true,
+            gradient: ["blue","#2AB92A"],
+            transitionGradient: true,
+        }
+    ) ;
+
+    console.log(colorLog`VERSION {green.bold ${_package.version}}`) ;
+
+    console.log( colorLog`\ninit a new CMP project for {cyan.bold ${projectName}}\n` ) ;
+
+    if( args.includes('header-mode') ) {
+
+        process.exit() ;
+    }
 
     const buildFolders = require('./../lib/build-folders/endpoint') ;
     const buildFiles = require('./../lib/build-files/endpoint') ;
     const resolveDependencies = require('./../lib/dependencies/endpoint') ;
 
     buildFolders( {
-        projectName
+        projectName,
+        args
     } ) ;
 
     console.log(
-        colorLog.green.bold( `start create files for: "${projectName}"\n`)
+        colorLog`start create files for: {cyan.bold ${projectName}}\n`
     ) ;
 
     buildFiles({
-        projectName
+        projectName,
+        args
     } ) ;
 
     console.log(
-        colorLog.green.bold(`\nstart install dependencies form NPM:\n`)
+        colorLog.yellow.bold('\nclean local storage args install\n')
     ) ;
 
-    resolveDependencies( {
-        projectName
-    } ) ;
+    // clean storage install after build files
+    writeStorageInstall( [] ) ;
 
-    console.log(
-        colorLog.green.bold(`project init in: ${ Date.now()-startTime}ms`)
-    ) ;
+    if( !args.includes('no-npm') ) {
 
-    console.log(
-        colorLog.cyan.bold(`\n> cd ${projectName}\n\n> npm start\n\nenjoy and unicorn power <3 !\n`)
-    ) ;
+        console.log(
+            colorLog`\nstart install dependencies from {red.bold NPM}:\n`
+        ) ;
+
+        resolveDependencies( {
+            projectName
+        } ) ;
+    } else {
+
+        console.log(
+            colorLog`\n{yellow.bold Warning:} you have start install with: {red.bold "--no-npm"} arg, if you dont debug local files of this project\nyou should {cyan.bold re install} with not this param.`
+        );
+    }
+
+    const cliui = require('cliui')() ;
+
+    cliui.div({
+        text: colorLog`project init in: {green.bold ${ Date.now()-startTime}ms}` ,
+        width: 80,
+        padding: [1,8,2,0]
+    }) ;
+
+    cliui.div({
+        text: colorLog`\n> cd {cyan.bold ${projectName}}\n\n> npm start`,
+        width: 80,
+        padding: [1,8,2,0]
+    }) ;
+
+    cliui.div({
+        text: colorLog`enjoy and unicorn power {red.bold <3} !\n`,
+        width: 60,
+        padding: [0,0,0,0],
+        align: 'right'
+    }) ;
+
+    console.log( cliui.toString() ) ;
+
+    process.exit() ;
 
 } else {
 
@@ -75,6 +149,8 @@ if( isValidProjectName( projectName ) ) {
             colorLog.green.bold( _package.version + "\n" )
         ) ;
 
+        process.exit() ;
+
     } else if( /^(\-\-?)(author|owner)$/i.test(projectName) ) {
 
         console.log(
@@ -83,11 +159,15 @@ if( isValidProjectName( projectName ) ) {
             )
         ) ;
 
+        process.exit() ;
+
     } else {
 
         console.log(
             colorLog.red.bold( `Error: "${projectName}" , is not a valid project name` )
         ) ;
+
+        process.exit() ;
     }
 
 }

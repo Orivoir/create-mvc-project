@@ -1,21 +1,48 @@
 {
   "name": "create-mvc-project",
   "version": "0.1.0-alpha",
-  "description": "",
+  "description": "build your will flexible new project with a standard model view controller structure and enjoy with integrate console, make yourcontroller in one command , define your route with annotations and other...",
   "main": "index.js",
   "bin": {
     "create-mvc-project": "./bin/create-mvc-project.js"
   },
-  "scripts": {},
-  "keywords": [],
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc npm test"
+  },
+  "keywords": [
+    "mvc",
+    "create",
+    "controller",
+    "model",
+    "project",
+    "views",
+    "express",
+    "ejs",
+    "cli",
+    "console",
+    "bin",
+    "sql",
+    "mysql"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Orivoir/create-mvc-project.git"
   },
-  "author": "Gaboriau Samuel <https://github.com/Orivoir>",
+  "author": "Gaboriau Samuel <https://github.com/Orivoir/>",
   "license": "ISC",
   "dependencies": {
     "build-directories": "^1.0.1",
-    "chalk": "^4.0.0"
+    "cfonts": "^2.8.1",
+    "chalk": "^4.0.0",
+    "cliui": "^6.0.0",
+    "ora": "^4.0.3"
+  },
+  "devDependencies": {
+    "array-key-object-uniq": "^0.5.0",
+    "chai": "^4.2.0",
+    "class-annotations": "0.9.4-beta",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1"
   }
 }

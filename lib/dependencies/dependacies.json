@@ -1,25 +1,31 @@
 [
     {
-        "name": "class-annotations@0.8.0",
+        "name": "class-annotations@0.9.4-beta",
         "mode": "--save",
         "author": "<https://github.com/Orivoir/>"
-    },
-    {
+    }, {
+        "name": "array-key-object-uniq" ,
+        "mode": "--save" ,
+        "author": "<https://github.com/Orivoir/>"
+    }, {
         "name": "express" ,
         "mode": "--save",
-        "author": ""
-    },
-    {
+        "author": "<https://github.com/expressjs/express/>"
+    }, {
         "name": "ejs",
         "mode": "--save",
         "author": "<https://github.com/mde/>"
-    } , {
+    }, {
         "name": "chalk",
         "mode": "--save-dev",
         "author": "<https://github.com/chalk/>"
-    } , {
+    }, {
         "name": "parse-database-url" ,
         "mode": "--save" ,
         "author": "<https://github.com/pwnall/>"
+    }, {
+        "name": "cliui" ,
+        "mode": "--save" ,
+        "author": "<https://github.com/yargs/>"
     }
 ]
