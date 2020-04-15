@@ -138,11 +138,11 @@
     }, {
         "filename": "express.config.js",
         "path": "/config",
-        "contentPath": "./content-files/express.config-no-ejs.js"
+        "contentPath": "./content-files/NO-EJS/express.config-no-ejs.js"
     }, {
         "filename": "Main.js",
         "path": "/src/controller",
-        "contentPath": "./content-files/Main-no-ejs.js"
+        "contentPath": "./content-files/NO-EJS/Main-no-ejs.js"
     }, {
         "filename": "normalize-package-name.js",
         "path": "/mvc-vendor",
@@ -162,6 +162,6 @@
     }, {
         "filename": "index.html",
         "path": "/views/main/",
-        "contentPath": "./content-files/index-no-ejs.html"
+        "contentPath": "./content-files/NO-EJS/index-no-ejs.html"
     }
 ]
