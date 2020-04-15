@@ -7,7 +7,7 @@
     {
         "filename": "resolve-conflict-routes.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/resolve-conflict-routes.js"
+        "contentPath": "./content-files/router/resolve-conflict-routes.js"
     } ,
     {
         "filename": "extract-constructor-header.js",
@@ -57,12 +57,12 @@
     {
         "filename": "build-routes.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/build-routes.js"
+        "contentPath": "./content-files/router/build-routes.js"
     } ,
     {
         "filename": "write-routes.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/write-routes.js"
+        "contentPath": "./content-files/router/write-routes.js"
     } , {
         "filename": ".env",
         "path": "/",
