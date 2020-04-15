@@ -1,6 +1,6 @@
 {
   "name": "create-mvc-project",
-  "version": "0.1.0-alpha",
+  "version": "0.1.1-alpha",
   "description": "build your will flexible new project with a standard model view controller structure and enjoy with integrate console, make yourcontroller in one command , define your route with annotations and other...",
   "main": "index.js",
   "bin": {
