@@ -42,7 +42,7 @@
     {
         "filename": "console.js",
         "path": "/bin",
-        "contentPath": "./content-files/console.js"
+        "contentPath": "./content-files/CLI/console.js"
     } ,
     {
         "filename": "routes.json",
@@ -94,11 +94,11 @@
     }, {
         "filename": "build-model-controller.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/build-model-controller.js"
+        "contentPath": "./content-files/CLI/lib/build-model-controller.js"
     }, {
         "filename": "build-view-controller.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/build-view-controller.js"
+        "contentPath": "./content-files/CLI/lib/build-view-controller.js"
     }, {
         "filename": "index-model",
         "path": "/mvc-vendor",
