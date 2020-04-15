@@ -52,7 +52,7 @@
     {
         "filename": "controller-model-template",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model-ejs.txt"
+        "contentPath": "./content-files/models/controller-ejs.txt"
     } ,
     {
         "filename": "build-routes.js",
@@ -102,11 +102,11 @@
     }, {
         "filename": "index-model",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/index-model-ejs.txt"
+        "contentPath": "./content-files/models/index-ejs.txt"
     }, {
         "filename": "controller-model-json",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model-json.txt"
+        "contentPath": "./content-files/models/controller-json.txt"
     }, {
         "filename": "express.config.js",
         "path": "/config",
@@ -154,11 +154,11 @@
     }, {
         "filename": "index-model",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/index-model-no-ejs.txt"
+        "contentPath": "./content-files/models/index-no-ejs.txt"
     }, {
         "filename": "controller-model-template",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model-no-ejs.txt"
+        "contentPath": "./content-files/models/controller-no-ejs.txt"
     }, {
         "filename": "index.html",
         "path": "/views/main/",
