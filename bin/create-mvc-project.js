@@ -17,7 +17,9 @@ const args = process.argv.slice( 3 , )
 process['create-mvc-project'] = {
 
     // check if want use EJS templating
-    isEJS: !args.find( arg => /^no-ejs$/i.test(arg) )
+    isEJS: !args.find( arg => /^no-ejs$/i.test(arg) ) ,
+
+    isMySQL: !args.find( arg => /^no-(my)?sql$/i.test(arg) )
 } ;
 
 
@@ -66,7 +68,6 @@ if( isValidProjectName( projectName ) ) {
 
     console.log( colorLog`\ninit a new CMP project for {cyan.bold ${projectName}}\n` ) ;
 
-
     if( args.includes('header-mode') ) {
 
         process.exit() ;
@@ -106,6 +107,11 @@ if( isValidProjectName( projectName ) ) {
         resolveDependencies( {
             projectName
         } ) ;
+    } else {
+
+        console.log(
+            colorLog`\n{yellow.bold Warning:} you have start install with: {red.bold "--no-npm"} arg, if you dont debug local files of this project\nyou should {cyan.bold re install} with not this param.`
+        );
     }
 
     const cliui = require('cliui')() ;
@@ -130,7 +136,6 @@ if( isValidProjectName( projectName ) ) {
     }) ;
 
     console.log( cliui.toString() ) ;
-
 
     process.exit() ;
 

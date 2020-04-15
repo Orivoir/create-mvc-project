@@ -66,7 +66,11 @@
     } , {
         "filename": ".env",
         "path": "/",
-        "contentPath": "./content-files/.env"
+        "contentPath": "./content-files/.env-sql"
+    } , {
+        "filename": ".env",
+        "path": "/",
+        "contentPath": "./content-files/.env-no-sql"
     } , {
         "filename": "read-envfile.js",
         "path": "/mvc-vendor",
