@@ -1,6 +1,6 @@
 const
     {expect, assert} = require('chai'),
-    extractDependenciesList = require('./../lib/build-files/content-files/extract-dependencies-list'),
+    extractDependenciesList = require('./../lib/build-files/content-files/controllers/extract-dependencies-list'),
     factoryData = require('./factory-data/extract-dependencies-list.json')
 ;
 

@@ -1,7 +1,7 @@
 const
     {expect,assert} = require('chai'),
 
-    resolveConflictRoutes = require('./../lib/build-files/content-files/resolve-conflict-routes') ,
+    resolveConflictRoutes = require('./../lib/build-files/content-files/router/resolve-conflict-routes') ,
 
     factoryData = require('./factory-data/resolve-confict-routes.json')
 ;
