@@ -9,7 +9,7 @@ const
 
     fs = require('fs') ,
 
-    buildRoutes = require('./../lib/build-files/content-files/build-routes')
+    buildRoutes = require('./../lib/build-files/content-files/router/build-routes')
 ;
 
 describe('`build-routes` function start', () => {

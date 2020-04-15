@@ -1,7 +1,7 @@
 const
     {expect,assert} = require('chai') ,
     factoryData = require('./factory-data/extract-constructor-header.json') ,
-    extractConstructorHeader = require('./../lib/build-files/content-files/extract-constructor-header') ,
+    extractConstructorHeader = require('./../lib/build-files/content-files/controllers/extract-constructor-header') ,
 
     fs = require('fs') ,
     pathResolver = require('path')

@@ -30,7 +30,7 @@ const writeStorageInstall = data => {
     fs.writeFileSync(
         pathResolver.join(
             __dirname,
-            './../lib/build-files/content-files/storage-install.json'
+            './../lib/build-files/content-files/metadata/storage-install.json'
         ) ,
         JSON.stringify( data )
     ) ;

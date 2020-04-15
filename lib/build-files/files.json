@@ -2,22 +2,22 @@
     {
         "filename": "package.json",
         "path": "/",
-        "contentPath": "./content-files/_package.json"
+        "contentPath": "./content-files/metadata/_package.json"
     } ,
     {
         "filename": "resolve-conflict-routes.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/resolve-conflict-routes.js"
+        "contentPath": "./content-files/router/resolve-conflict-routes.js"
     } ,
     {
         "filename": "extract-constructor-header.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/extract-constructor-header.js"
+        "contentPath": "./content-files/controllers/extract-constructor-header.js"
     } ,
     {
         "filename": "extract-dependencies-list.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/extract-dependencies-list.js"
+        "contentPath": "./content-files/controllers/extract-dependencies-list.js"
     } ,
     {
         "filename": "kernel.js",
@@ -27,12 +27,12 @@
     {
         "filename": "Main.js",
         "path": "/src/controller",
-        "contentPath": "./content-files/Main.js"
+        "contentPath": "./content-files/EJS/Main.js"
     } ,
     {
         "filename": "index.ejs",
         "path": "/views/main",
-        "contentPath": "./content-files/index.ejs"
+        "contentPath": "./content-files/EJS/index.ejs"
     } ,
     {
         "filename": "build-controller.js",
@@ -42,35 +42,35 @@
     {
         "filename": "console.js",
         "path": "/bin",
-        "contentPath": "./content-files/console.js"
+        "contentPath": "./content-files/CLI/console.js"
     } ,
     {
         "filename": "routes.json",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/routes.json"
+        "contentPath": "./content-files/metadata/routes.json"
     } ,
     {
         "filename": "controller-model-template",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model-ejs.txt"
+        "contentPath": "./content-files/models/controller-ejs.txt"
     } ,
     {
         "filename": "build-routes.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/build-routes.js"
+        "contentPath": "./content-files/router/build-routes.js"
     } ,
     {
         "filename": "write-routes.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/write-routes.js"
+        "contentPath": "./content-files/router/write-routes.js"
     } , {
         "filename": ".env",
         "path": "/",
-        "contentPath": "./content-files/.env-sql"
+        "contentPath": "./content-files/SQL/.env-sql"
     } , {
         "filename": ".env",
         "path": "/",
-        "contentPath": "./content-files/.env-no-sql"
+        "contentPath": "./content-files/NO-SQL/.env-no-sql"
     } , {
         "filename": "read-envfile.js",
         "path": "/mvc-vendor",
@@ -78,39 +78,39 @@
     } , {
         "filename": "resolve-dependencies-controller.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/resolve-dependencies-controller.js"
+        "contentPath": "./content-files/controllers/resolve-dependencies-controller.js"
     }, {
         "filename": "injector-dependence.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/injector-dependence.js"
+        "contentPath": "./content-files/controllers/injector-dependence.js"
     }, {
         "filename": "404.html",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/404.html"
+        "contentPath": "./content-files/render/404.html"
     }, {
         "filename": "home-404.html",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/home-404.html"
+        "contentPath": "./content-files/render/home-404.html"
     }, {
         "filename": "build-model-controller.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/build-model-controller.js"
+        "contentPath": "./content-files/CLI/lib/build-model-controller.js"
     }, {
         "filename": "build-view-controller.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/build-view-controller.js"
+        "contentPath": "./content-files/CLI/lib/build-view-controller.js"
     }, {
         "filename": "index-model",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/index-model-ejs.txt"
+        "contentPath": "./content-files/models/index-ejs.txt"
     }, {
         "filename": "controller-model-json",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model-json.txt"
+        "contentPath": "./content-files/models/controller-json.txt"
     }, {
         "filename": "express.config.js",
         "path": "/config",
-        "contentPath": "./content-files/express.config.js"
+        "contentPath": "./content-files/EJS/express.config.js"
     }, {
         "filename": "affect-config-express.js",
         "path": "/mvc-vendor",
@@ -118,11 +118,11 @@
     }, {
         "filename": "mysql-config.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/mysql-config.js"
+        "contentPath": "./content-files/SQL/mysql-config.js"
     }, {
         "filename": "setup-mysql.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/setup-mysql.js"
+        "contentPath": "./content-files/SQL/mysql-setup.js"
     }, {
         "filename": "execute-custom-entry-point.js",
         "path": "/mvc-vendor",
@@ -130,19 +130,19 @@
     }, {
         "filename": "mysql-error.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/mysql-error.js"
+        "contentPath": "./content-files/SQL/mysql-error.js"
     }, {
         "filename": "build-data-error-mysql.js",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/build-data-error-mysql.js"
+        "contentPath": "./content-files/SQL/mysql-build-data-error.js"
     }, {
         "filename": "express.config.js",
         "path": "/config",
-        "contentPath": "./content-files/express.config-no-ejs.js"
+        "contentPath": "./content-files/NO-EJS/express.config-no-ejs.js"
     }, {
         "filename": "Main.js",
         "path": "/src/controller",
-        "contentPath": "./content-files/Main-no-ejs.js"
+        "contentPath": "./content-files/NO-EJS/Main-no-ejs.js"
     }, {
         "filename": "normalize-package-name.js",
         "path": "/mvc-vendor",
@@ -150,18 +150,18 @@
     }, {
         "filename": "storage-install.json",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/storage-install.json"
+        "contentPath": "./content-files/metadata/storage-install.json"
     }, {
         "filename": "index-model",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/index-model-no-ejs.txt"
+        "contentPath": "./content-files/models/index-no-ejs.txt"
     }, {
         "filename": "controller-model-template",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/controller-model-no-ejs.txt"
+        "contentPath": "./content-files/models/controller-no-ejs.txt"
     }, {
         "filename": "index.html",
         "path": "/views/main/",
-        "contentPath": "./content-files/index-no-ejs.html"
+        "contentPath": "./content-files/NO-EJS/index-no-ejs.html"
     }
 ]
