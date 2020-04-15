@@ -86,11 +86,11 @@
     }, {
         "filename": "404.html",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/404.html"
+        "contentPath": "./content-files/render/404.html"
     }, {
         "filename": "home-404.html",
         "path": "/mvc-vendor",
-        "contentPath": "./content-files/home-404.html"
+        "contentPath": "./content-files/render/home-404.html"
     }, {
         "filename": "build-model-controller.js",
         "path": "/mvc-vendor",
