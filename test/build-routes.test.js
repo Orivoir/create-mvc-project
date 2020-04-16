@@ -32,4 +32,37 @@ describe('`build-routes` function start', () => {
 
     } ) ;
 
+
+    describe('should build routes:' , () => {
+
+        const an = new ClassAnnotations('./build-routes/controller/') ;
+
+        const routes = buildRoutes( an ) ;
+
+        factoryData.output.forEach( (route,index) => {
+
+            Object.keys( route ).forEach( (key) => {
+
+                const messageIt = `await: ${route[key]} receveid: ${routes[index][key]} `
+
+                it( messageIt , () => {
+
+                    if( route[key] instanceof Array ) {
+
+                        assert.isArray( routes[index][key] ) ;
+                        expect( route[key] ).to.be.lengthOf( routes[index][key].length ) ;
+
+                    } else {
+                        expect( route[key] ).to.be.equal( routes[index][key] ) ;
+                    }
+
+
+                } ) ;
+
+            } ) ;
+
+        } ) ;
+
+    } ) ;
+
 } ) ;

@@ -1,6 +1,17 @@
-[
-    {
-        "entry": "./class-0.js",
-        "output": "./route-0.json"
-    }
-]
+{
+    "output": [
+        {
+            "name": "foo_index",
+            "controller": "Foo",
+            "methods": ["GET"],
+            "methodName": "index",
+            "path": "/foo/index"
+        } , {
+            "name": "bar_index",
+            "controller": "Bar",
+            "methods": ["GET","POST"],
+            "methodName": "index",
+            "path": "/bar/index"
+        }
+    ]
+}

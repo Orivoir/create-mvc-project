@@ -60,6 +60,16 @@
         "contentPath": "./content-files/router/build-routes.js"
     } ,
     {
+        "filename": "read-file-item.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/router/read-file-item.js"
+    } ,
+    {
+        "filename": "read-directory-item.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/router/read-directory-item.js"
+    } ,
+    {
         "filename": "write-routes.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/router/write-routes.js"
