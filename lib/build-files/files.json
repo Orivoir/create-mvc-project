@@ -163,5 +163,9 @@
         "filename": "index.html",
         "path": "/views/main/",
         "contentPath": "./content-files/NO-EJS/index-no-ejs.html"
+    } , {
+        "filename": "logger.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/logger/logger.js"
     }
 ]
