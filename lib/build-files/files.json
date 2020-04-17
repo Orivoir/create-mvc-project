@@ -60,6 +60,16 @@
         "contentPath": "./content-files/router/build-routes.js"
     } ,
     {
+        "filename": "read-file-item.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/router/read-file-item.js"
+    } ,
+    {
+        "filename": "read-directory-item.js",
+        "path": "/mvc-vendor",
+        "contentPath": "./content-files/router/read-directory-item.js"
+    } ,
+    {
         "filename": "write-routes.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/router/write-routes.js"
@@ -143,6 +153,10 @@
         "filename": "Main.js",
         "path": "/src/controller",
         "contentPath": "./content-files/NO-EJS/Main-no-ejs.js"
+    }, {
+        "filename": "build-controllers-list.js",
+        "path": "/mvc-vendor/",
+        "contentPath": "./content-files/controllers/build-controllers-list.js"
     }, {
         "filename": "normalize-package-name.js",
         "path": "/mvc-vendor",
