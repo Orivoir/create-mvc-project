@@ -1,0 +1,11 @@
+{
+    "output": [
+        {
+            "controller": "Bar"
+        } , {
+            "controller": "Foo"
+        } , {
+            "controller": "Foobar"
+        }
+    ]
+}

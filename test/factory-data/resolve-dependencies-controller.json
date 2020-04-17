@@ -1,0 +1,13 @@
+[
+    {
+        "controller": "Bar",
+        "list": [
+            "abc", "def", "stuff"
+        ]
+    }, {
+        "controller": "Foo",
+        "list": [
+            "chalk", "stuff"
+        ]
+    }
+]

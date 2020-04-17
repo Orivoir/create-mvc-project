@@ -1,5 +1,10 @@
 class Foo {
 
+    constructor(
+        chalk ,
+        stuff
+    )
+
     /**
      * @Route({
      *  name: "foo_index",

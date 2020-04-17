@@ -154,6 +154,10 @@
         "path": "/src/controller",
         "contentPath": "./content-files/NO-EJS/Main-no-ejs.js"
     }, {
+        "filename": "build-controllers-list.js",
+        "path": "/mvc-vendor/",
+        "contentPath": "./content-files/controllers/build-controllers-list.js"
+    }, {
         "filename": "normalize-package-name.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/normalize-package-name.js"
