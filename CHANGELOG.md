@@ -2,7 +2,7 @@
 
 ## All notable changes to this project will be documented in this file.
 
-## [0.1.2-alpha]()
+## [0.1.2-alpha](https://github.com/Orivoir/create-mvc-project/tree/0.1.2-alpha) - 2020-17-04
 
 ### Added
 
