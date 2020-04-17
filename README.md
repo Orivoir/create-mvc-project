@@ -2,7 +2,7 @@ Please if you detect a error inside documentation or if you have
 a best precision of english langague push a pull request or open
 a new [issue](https://github.com/Orivoir/create-mvc-project/issues/new)
 
-# [create-mvc-project](https://github.com/Orivoir/create-mvc-project) version 0.1.0-alpha
+# [create-mvc-project](https://github.com/Orivoir/create-mvc-project) version 0.1.2-alpha
 
 > build your will flexible new project with a standard model view controller structure and enjoy with integrate console, make yourcontroller in one command , define your route with annotations and other...
 
