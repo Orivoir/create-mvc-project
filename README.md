@@ -21,7 +21,7 @@ a new [issue](https://github.com/Orivoir/create-mvc-project/issues/new)
 - [console](#console)
     - [make controller CLI](#make-controller-cli)
     - [debug router CLI](#debug-router-cli)
-    - [debug mysql CLI](#debug-router-cli)
+    - [mysql CLI](#mysql-cli)
 
 - [env](#env)
     - [mysql](#mysql)
@@ -234,7 +234,7 @@ you receveid a **static message**:
 you should mannually search the duplicate error
 the precision error message will optimize before first **beta** version
 
-### debug mysql CLI
+### mysql cli
 
 if you have config your MySQL database server from [.env file](#env)
 you can test **connection** from **CLI**
@@ -248,6 +248,61 @@ RawDataPacket: { 'version()': '<YOUR MYSQL VERSION>' }
 ```
 
 if you have a error connection **CLI** return a message with a good precision of the error
+
+
+after success test connection to you MySQL database you can use cammnad **hanlder MySQL** from **CLI**
+
+### create database
+
+if you have dont create your database or if you have remove database you can create/recreate with:
+
+> node ./bin/console mysql create
+
+if database not exists success else error database already exists
+
+*the database name create is define inside your config from: ./.env file*
+
+### drop database
+
+if you want remove your current database you can run
+
+> node ./bin/console mysql drop
+
+if database not exists receveid error message else database removed with success
+
+**warning: the drop database command not ask confirm action**
+
+### dump databse
+
+before remove your database you can **export SQL file** for save a version of your work,
+you can shared with git your structure SQL with a command:
+
+> node ./bin/console mysql dump
+
+only if your database exists and if you have one or many tables cant export empty databases
+you can find the SQL file inside: **./SQL/{database}.sql**
+
+**warning: if you run many time dump command,  dump erease last {database}.sql file**
+
+### import database
+
+if you have clone a project write with: **create-mvc-project** from *github* or any repository type and
+you should rebuild database already export inside: **./SQL/{database}.sql**
+you can run
+
+> node ./bin/console mysql import
+
+only if you database exists else you can run before
+
+> node ./bin/console mysql create
+
+and after
+
+> node ./bin/console mysql import
+
+this command try execute **./SQL/{database}.sql** file on you database config from ./.env file
+
+**Warning: you cant use MySQL handler if you have install create-mvc-project with: --no-sql params during install**
 
 
 ## env
