@@ -5,6 +5,26 @@
         "contentPath": "./content-files/metadata/_package.json"
     } ,
     {
+        "filename": "router.js",
+        "path": "/bin/commands/",
+        "contentPath": "./content-files/CLI/lib/commands/router.js"
+    } ,
+    {
+        "filename": "controller.js",
+        "path": "/bin/commands/",
+        "contentPath": "./content-files/CLI/lib/commands/controller.js"
+    } ,
+    {
+        "filename": "mysql-test.js",
+        "path": "/bin/commands/",
+        "contentPath": "./content-files/CLI/lib/commands/mysql-test.js"
+    } ,
+    {
+        "filename": "mysql-handler.js",
+        "path": "/bin/commands/",
+        "contentPath": "./content-files/CLI/lib/commands/mysql-handler.js"
+    } ,
+    {
         "filename": "resolve-conflict-routes.js",
         "path": "/mvc-vendor",
         "contentPath": "./content-files/router/resolve-conflict-routes.js"
