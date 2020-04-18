@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WOS - create-mvc-project</title>
+    </head>
+
+    <body>
+
+        <main>
+
+			<!-- output section -->
+			<section>
+
+				<ul class="output-wos-list">
+
+					<!--
+						<li class="output-wos-item">
+
+							<section>
+
+								<header>
+									<p>
+										&gt; node ./bin/console
+										<span class="command-run">
+											{command}
+										</span>
+									</p>
+								</header>
+
+								<aside class="output-content">
+
+									<p>
+										{output}
+									</p>
+
+								</aside>
+
+							</section>
+
+						</li>
+					-->
+
+				</ul>
+
+			</section>
+
+            <!-- CLI FORM -->
+            <section>
+                <form action="/wos/run" method="GET" id="form-cli">
+
+                    <label for="">
+                        &gt; node ./bin/console
+                    </label>
+
+                    <input
+                        type="text"
+                        name="cli"
+                        id="cli"
+                        autofocus="on"
+                        spellcheck="false"
+                        autocomplete="off"
+                    >
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded' , () => {
+
+                if( !(window.fetch instanceof Function) ) {
+
+                    throw "fetch API not support inside this context, upgrade you browser" ;
+                }
+
+                const formCLI = document.querySelector('form#form-cli') ;
+
+				const outputList = document.querySelector('ul.output-wos-list') ;
+
+                formCLI.addEventListener('submit' , e => {
+
+                    e.preventDefault() ;
+
+                    const command = formCLI['cli'].value ;
+
+                    const action = formCLI.getAttribute('action') + `/${command.trim()}` ;
+
+                    fetch( action , {
+
+                        method: 'GET',
+
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+
+                    } )
+                    .then( async (response) => {
+
+                        const data = await response.json() ;
+
+						let {output, command} = data ;
+
+						while( output.indexOf('\n') !== -1  || output.indexOf('\t') !== -1 ) {
+
+							output = output.replace('\n', '<br>') ;
+							output = output.replace('\t', '&emsp;') ;
+						}
+
+						const li = document.createElement('li') ;
+
+						li.classList.add('output-wos-item') ;
+
+						li.innerHTML = `
+							<section>
+
+								<header>
+									<p>
+										&gt; node ./bin/console
+										<span class="command-run">
+											${command}
+										</span>
+									</p>
+								</header>
+
+								<aside class="output-content">
+
+									<p>
+										${output}
+									</p>
+
+								</aside>
+
+							</section>
+						` ;
+
+						outputList.appendChild( li ) ;
+
+						formCLI['cli'].value = "" ;
+
+						document.querySelector("html").scrollTo(  0 , window.outerHeight ) ;
+
+                    } )
+                    .catch( error => {
+
+                        console.error( error );
+
+                        throw "fetch run command error" ;
+
+                    } ) ;
+
+                } ) ;
+
+            } ) ;
+
+        </script>
+
+    </body>
+
+</html>

@@ -10,6 +10,11 @@
         "contentPath": "./content-files/CLI/lib/commands/router.js"
     } ,
     {
+        "filename": "index.html",
+        "path": "/mvc-vendor/WOS/",
+        "contentPath": "./content-files/render/WOS/index.html"
+    } ,
+    {
         "filename": "controller.js",
         "path": "/bin/commands/",
         "contentPath": "./content-files/CLI/lib/commands/controller.js"
