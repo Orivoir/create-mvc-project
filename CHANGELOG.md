@@ -13,3 +13,11 @@
 - re factoring [build-routes](https://github.com/Orivoir/create-mvc-project/pull/28/commits/eaf2db932d901e5ea5337e30e7455490fad665ef)
 
 - add unit test upgrade facotry data
+
+## [0.1.3-alpha](https://github.com/Orivoir/create-mvc-project/tree/0.1.3-alpha) - 2020-18-04
+
+### Added
+
+- add [MySQL handler]( https://github.com/Orivoir/create-mvc-project/commit/33dd9996965516bf6ca89220022bb919cd925475 )
+
+- re factoring [CLI file]( https://github.com/Orivoir/create-mvc-project/commit/844854386a5e3ae969ed01e20c3be041f06772cb )
