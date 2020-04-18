@@ -27,5 +27,13 @@
         "name": "cliui" ,
         "mode": "--save" ,
         "author": "<https://github.com/yargs/>"
+    } , {
+        "name": "mysqldump",
+        "mode": "--save",
+        "author": "<https://github.com/assignar/>"
+    } , {
+        "name": "mysql-import",
+        "mode": "--save",
+        "author": "<https://github.com/pamblam/>"
     }
 ]
